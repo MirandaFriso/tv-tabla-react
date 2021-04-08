@@ -10,7 +10,7 @@ const TvPrograms = () => {
             );
 
             const data = await programData.json();
-            setPrograms(programData);
+            setPrograms(data);
         };
         if (!programs.length) {
             fetchPrograms();

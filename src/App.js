@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import MyPrograms from './MyPrograms';
+import TvPrograms from './TvPrograms';
 
 function App() {
   return (
     <div className="App">
-      <MyPrograms />
+      <TvPrograms />
     </div>
   );
 }
