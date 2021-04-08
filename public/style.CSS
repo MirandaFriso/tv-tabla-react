@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+  }
+  
+  .channel-title {
+    text-align: center;
+  }
+  
+  .program-list {
+    list-style-type: none;
+    
+  }
+  
+  .program-list__item {
+    
+  }
