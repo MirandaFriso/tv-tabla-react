@@ -18,9 +18,9 @@ const TvPrograms = () => {
     });
 
     return (
-        <div>
-            <h1 class="channel-title">SVT 1</h1>
-            <ul class="program-list">
+        <div className="col-sm-4 offset-sm-4">
+            <h1 className="channel-title">SVT 1</h1>
+            <ul className="program-list">
                 {programs.map((program) => (
                     <li class="program-list__item">
                         {program.start}
