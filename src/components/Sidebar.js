@@ -2,14 +2,16 @@ import React from 'react'
 
 
 
-const sideBar = () => {
+const sideBar = ({updateChannel}) => {
     return (
     <div className="menu">
-        <a className="menu__link" href=" ">SVT 1</a>
-        <a className="menu__link" href=" ">SVT 2</a>
-        <a className="menu__link" href=" ">SVT Barn</a>
-        <a className="menu__link" href=" ">Kunskapskanalen</a>
-        <a className="menu__link" href=" ">SVT 24</a>
+        <ul>
+            <li className="menu__link" onClick={() => updateChannel("SVT 1")}>SVT 1</li>
+            <li className="menu__link" onClick={() => updateChannel("SVT 2")}>SVT 2</li>
+            <li className="menu__link" onClick={() => updateChannel("SVT Barn")}>SVT Barn</li>
+            <li className="menu__link" onClick={() => updateChannel("Kunskapskanlen")}>Kunskapskanalen</li>
+            <li className="menu__link" onClick={() => updateChannel("SVT 24")}>SVT 24</li>
+        </ul>
     </div>
     )
 }
