@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-const TvPrograms = () => {
+let channelName = "SVT 1";
+
+
+const TvPrograms = ({channelName}) => {
 
     const [programs, setPrograms] = useState([]);
 
     useEffect(() => {
         const fetchPrograms = async () => {
-            const programData = await fetch('http://tv-api-p2x2o.ondigitalocean.app/SVT 1.json'
+            const programData = await fetch(`http://tv-api-p2x2o.ondigitalocean.app/${channelName}.json`
             );
 
             const data = await programData.json();
@@ -19,7 +22,7 @@ const TvPrograms = () => {
 
     return (
         <div className="col-sm-4 offset-sm-4">
-            <h1 className="channel-title">SVT 1</h1>
+            <h1 className="channel-title">{channelName}</h1>
             <ul className="program-list">
                 {programs.map((program) => (
                     <li class="program-list__item">
