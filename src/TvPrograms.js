@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 
+let channelName = "SVT 1";
+
+
 const TvPrograms = ({channelName}) => {
 
     const [programs, setPrograms] = useState([]);
 
     useEffect(() => {
         const fetchPrograms = async () => {
-            const programData = await fetch('http://tv-api-p2x2o.ondigitalocean.app/' + channelName + '.json'
+            const programData = await fetch(`http://tv-api-p2x2o.ondigitalocean.app/${channelName}.json`
             );
 
             const data = await programData.json();

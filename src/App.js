@@ -6,7 +6,9 @@ import { useState } from 'react';
 
 function App() {
 
-  const [channel, setChannel] = useState('SVT 1');
+  let kanal = "SVT 1";
+
+  const [channel, setChannel] = useState(kanal);
 
 
   return (
