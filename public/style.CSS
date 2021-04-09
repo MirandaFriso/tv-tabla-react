@@ -40,6 +40,7 @@ body {
     background-color: #666;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .burger {
@@ -57,6 +58,5 @@ body {
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
-   
   }
 
